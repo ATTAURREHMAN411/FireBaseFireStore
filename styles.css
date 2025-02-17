@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Send video to the background */
+}
+
+/* Content on Top of the Video */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Add overlay */
+}
+body{
+    background-image: url(1.mp4);
+   /* background-repeat: no-repeat; */
+   background-size: cover;
+   height: 100vh;
+   width: 100vw;
+   /* text-align: center; */
+}
+.container{
+    display: flex;
+    background-color: white;
+    width: 60%;
+    padding: 60px 60px 60px 60px;
+}
+.flex{
+   height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fullname, .email, .password, .linktag{
+    font-family: "Red Hat Display", serif;
+}
+.linktag{
+    /* text-align: end; */
+    margin-top: 6px;
+}
+.linktag a{
+    text-decoration: none;
+    color: #882899;
+    margin-left: 5px;
+}
+input{
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+}
+.data{
+    width: 50%;
+
+}
+.data h1{
+    font-family: "Lobster", serif;
+   font-weight: 400;
+}
+.image{
+    /* border: 1px solid; */
+    width: fit-content;
+    text-align: end;
+}
+.image img{
+   height: 300px;
+   margin-left: 100px;
+}
+.uploadimg{
+    background-color: #882899;
+    border: 1.5px solid black;
+    padding: 8px 15px 8px 15px;
+  border-radius: 13px;
+  color: #fff;
+     cursor: pointer;
+}
+.submitebtn{
+    padding-left: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40%;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #882899;
+    border: 1.5px solid black;
+    color: white;
+}
+
+/* dash css */
